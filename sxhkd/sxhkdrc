@@ -173,7 +173,7 @@ super + Print
 
 # Shortcuts
 super + w 
-	google-chrome-stable
+	brave
  
 super + n 
   thunar  

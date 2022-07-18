@@ -52,6 +52,8 @@ dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 # Network Applet
 nm-applet --indicator &
 
+# killall -9 picom sxhkd dunst xfce4-power-manager ksuperkey eww caffeine firewall-applet
+killall -9 firewall-applet
 # Cursor
 xsetroot -cursor_name left_ptr &
 

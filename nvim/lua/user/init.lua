@@ -3,7 +3,8 @@ local config = {
   -- Set colorscheme
   -- colorscheme = "default_theme",
   -- colorscheme = "tokyonight",
-  colorscheme = "moonfly",
+  -- colorscheme = "moonfly",
+  colorscheme = "gruvbox",
   -- colorscheme = "sonokai",
   -- colorscheme = "catppuccin",
   -- set vim options here (vim.<first_key>.<second_key> =  value)
@@ -68,20 +69,20 @@ local config = {
   --   " ",
   --   " ",
   -- },
-    header = {
-        " ",
-        " ",
-        " ",
-        "██████╗░██╗░░░░░██╗░░░██╗░█████╗░██╗░░██╗░██████╗",
-        "██╔══██╗██║░░░░░██║░░░██║██╔══██╗██║░██╔╝██╔════╝",
-        "██████╔╝██║░░░░░██║░░░██║██║░░╚═╝█████═╝░╚█████╗░",
-        "██╔═══╝░██║░░░░░██║░░░██║██║░░██╗██╔═██╗░░╚═══██╗",
-        "██║░░░░░███████╗╚██████╔╝╚█████╔╝██║░╚██╗██████╔╝",
-        "╚═╝░░░░░╚══════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░",
-        " ",
-        " ",
-        " ",
-    },
+  header = {
+    " ",
+    " ",
+    " ",
+    "██████╗░██╗░░░░░██╗░░░██╗░█████╗░██╗░░██╗░██████╗",
+    "██╔══██╗██║░░░░░██║░░░██║██╔══██╗██║░██╔╝██╔════╝",
+    "██████╔╝██║░░░░░██║░░░██║██║░░╚═╝█████═╝░╚█████╗░",
+    "██╔═══╝░██║░░░░░██║░░░██║██║░░██╗██╔═██╗░░╚═══██╗",
+    "██║░░░░░███████╗╚██████╔╝╚█████╔╝██║░╚██╗██████╔╝",
+    "╚═╝░░░░░╚══════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░",
+    " ",
+    " ",
+    " ",
+  },
 
 
   -- Disable AstroNvim ui features
@@ -103,8 +104,11 @@ local config = {
           vim.g.tokyonight_style = "night"
         end,
       },
-      {"tpope/vim-fugitive"},
-      {"bluz71/vim-moonfly-colors"},
+      { "tpope/vim-fugitive" },
+      { "bluz71/vim-moonfly-colors" },
+      { "morhetz/gruvbox" },
+      { "vim-airline/vim-airline" },
+      { "vim-airline/vim-airline-themes" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
@@ -248,15 +252,15 @@ local config = {
         diagnostics.rubocop,
       },
       -- NOTE: You can remove this on attach function to disable format on save
-      on_attach = function(client)
-        if client.resolved_capabilities.document_formatting then
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            desc = "Auto format before save",
-            pattern = "<buffer>",
-            callback = vim.lsp.buf.formatting_sync,
-          })
-        end
-      end,
+      -- on_attach = function(client)
+      --   if client.resolved_capabilities.document_formatting then
+      --     vim.api.nvim_create_autocmd("BufWritePre", {
+      --       desc = "Auto format before save",
+      --       pattern = "<buffer>",
+      --       callback = vim.lsp.buf.formatting_sync,
+      --     })
+      --   end
+      -- end,
     }
   end,
 

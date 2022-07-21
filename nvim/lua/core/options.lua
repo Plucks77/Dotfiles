@@ -63,5 +63,6 @@ utils.vim_opts(utils.user_plugin_opts("options", {
     loaded_zipPlugin = true, -- disable zip
     loaded_vimball = true, -- disable vimball
     loaded_vimballPlugin = true, -- disable vimball
+    airline_powerline_fonts = 1,
   },
 }))

@@ -44,11 +44,11 @@ function M.config()
       options = {
         disabled_filetypes = { "NvimTree", "neo-tree", "dashboard", "Outline" },
         component_separators = "",
-        section_separators = "",
+        section_separators = { left = '', right = '' },
         globalstatus = true,
       },
       sections = {
-        lualine_a = { spacer },
+        lualine_a = { "mode" },
         lualine_b = {},
         lualine_c = {
           {

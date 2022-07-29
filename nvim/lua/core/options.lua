@@ -39,6 +39,8 @@ utils.vim_opts(utils.user_plugin_opts("options", {
     updatetime = 300, -- Length of time to wait before triggering the plugin
     wrap = false, -- Disable wrapping of lines longer than the width of window
     writebackup = false, -- Disable making a backup before overwriting a file
+    guicursor = "",
+    background = "dark"
   },
   g = {
     do_filetype_lua = 1, -- use filetype.lua
@@ -63,6 +65,7 @@ utils.vim_opts(utils.user_plugin_opts("options", {
     loaded_zipPlugin = true, -- disable zip
     loaded_vimball = true, -- disable vimball
     loaded_vimballPlugin = true, -- disable vimball
-    airline_powerline_fonts = 1,
+    -- tokyonight_transparent_sidebar = true,
+    -- tokyonight_transparent = true,
   },
 }))

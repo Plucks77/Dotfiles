@@ -71,7 +71,7 @@ M.on_attach = function(client, bufnr)
   --
   -- require("lsp-format").setup {}
   -- require "lspconfig".gopls.setup { on_attach = require "lsp-format".on_attach }
-  if client.name == "tsserver" or client.name == "jsonls" or client.name == "html" or client.name == "sumneko_lua" then
+  if client.name == "tsserver" or client.name == "jsonls" or client.name == "html" or client.name == "sumneko_lua" or client.name == "solargraph" then
     client.server_capabilities.document_formatting = false
   end
 

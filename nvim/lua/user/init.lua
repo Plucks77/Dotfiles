@@ -2,15 +2,16 @@ local config = {
 
   -- Set colorscheme
   -- colorscheme = "default_theme",
-  -- colorscheme = "tokyonight",
+  colorscheme = "tokyonight",
   -- colorscheme = "moonfly",
-  colorscheme = "gruvbox",
+  -- colorscheme = "gruvbox",
   -- colorscheme = "sonokai",
   -- colorscheme = "catppuccin",
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
+      background = "dark"
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -102,13 +103,12 @@ local config = {
         "folke/tokyonight.nvim",
         setup = function()
           vim.g.tokyonight_style = "night"
+          vim.g.tokyonight_transparent = true
         end,
       },
       { "tpope/vim-fugitive" },
       { "bluz71/vim-moonfly-colors" },
       { "morhetz/gruvbox" },
-      { "vim-airline/vim-airline" },
-      { "vim-airline/vim-airline-themes" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {

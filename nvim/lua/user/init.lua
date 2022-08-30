@@ -1,8 +1,9 @@
 local config = {
 
   -- Set colorscheme
-  -- colorscheme = "default_theme",
-  colorscheme = "tokyonight",
+  colorscheme = "default_theme",
+  -- colorscheme = "tokyonight",
+  colorscheme = "melange",
   -- colorscheme = "moonfly",
   -- colorscheme = "gruvbox",
   -- colorscheme = "sonokai",
@@ -109,6 +110,7 @@ local config = {
       { "tpope/vim-fugitive" },
       { "bluz71/vim-moonfly-colors" },
       { "morhetz/gruvbox" },
+      { "savq/melange" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {

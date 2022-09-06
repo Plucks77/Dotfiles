@@ -1,9 +1,11 @@
 local config = {
 
   -- Set colorscheme
-  colorscheme = "default_theme",
+  -- colorscheme = "default_theme",
   -- colorscheme = "tokyonight",
-  colorscheme = "melange",
+  -- colorscheme = "melange",
+  -- colorscheme = "onedark",
+  colorscheme = "ayu",
   -- colorscheme = "moonfly",
   -- colorscheme = "gruvbox",
   -- colorscheme = "sonokai",
@@ -111,6 +113,8 @@ local config = {
       { "bluz71/vim-moonfly-colors" },
       { "morhetz/gruvbox" },
       { "savq/melange" },
+      { "joshdick/onedark.vim" },
+      { "Shatur/neovim-ayu" },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {

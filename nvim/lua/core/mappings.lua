@@ -55,8 +55,8 @@ end
 -- Comment
 if utils.is_available "Comment.nvim" then
   map("n", "<leader>/", function()
-    --   require("Comment.api").toggle_current_linewise()
-    require("Comment.api").locked('toggle.linewise.current')()
+    require("Comment.api").toggle_current_linewise()
+    -- require("Comment.api").locked('toggle.linewise.current')()
   end, { desc = "Comment line" })
   map(
     "v",

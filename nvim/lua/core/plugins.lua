@@ -316,6 +316,7 @@ if packer_status_ok then
     {
       "numToStr/Comment.nvim",
       event = { "BufRead", "BufNewFile" },
+      tag = 'v0.6.1',
       config = function()
         require("configs.Comment").config()
       end,

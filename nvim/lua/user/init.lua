@@ -3,9 +3,10 @@ local config = {
   -- Set colorscheme
   -- colorscheme = "default_theme",
   -- colorscheme = "tokyonight",
+  -- colorscheme = "iceberg",
   -- colorscheme = "melange",
   -- colorscheme = "onedark",
-  colorscheme = "ayu",
+  colorscheme = "ayu-dark",
   -- colorscheme = "moonfly",
   -- colorscheme = "gruvbox",
   -- colorscheme = "sonokai",
@@ -103,11 +104,7 @@ local config = {
       -- ["goolord/alpha-nvim"] = { disable = true },
       { "lukas-reineke/lsp-format.nvim" },
       {
-        "folke/tokyonight.nvim",
-        setup = function()
-          vim.g.tokyonight_style = "night"
-          vim.g.tokyonight_transparent = true
-        end,
+        "folke/tokyonight.nvim"
       },
       { "tpope/vim-fugitive" },
       { "bluz71/vim-moonfly-colors" },
@@ -115,6 +112,21 @@ local config = {
       { "savq/melange" },
       { "joshdick/onedark.vim" },
       { "Shatur/neovim-ayu" },
+      { "cocopon/iceberg.vim" },
+      { 'olivercederborg/poimandres.nvim',
+        config = function()
+          require('poimandres').setup {
+            -- leave this setup function empty for default config
+            -- or refer to the configuration section
+            -- for configuration options
+          }
+        end
+      },
+      { "johmsalas/text-case.nvim",
+        config = function()
+          require('textcase').setup {}
+        end
+      },
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
       -- {
